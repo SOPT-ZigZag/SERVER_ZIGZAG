@@ -6,7 +6,7 @@ const BannerSchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    bannerIdx: {
+    banner_idx: {
         type:Number,
         required: true
     }

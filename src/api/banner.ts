@@ -7,14 +7,14 @@ import Banner from "../models/Banner";
 router.get("/", async(req: Request, res: Response) => {
         try{
             const randomInt = Math.floor(Math.random()*3);
-            const banner = await Banner.findOne({bannerIdx : randomInt});
+            const banner = await Banner.findOne({banner_idx : randomInt});
             res.json({
                 "status" : 200,
                 "success" : true,
                 "message" : "성공",
                 "data" : {
                     img: banner.img,
-                    bannerIdx: banner.bannerIdx
+                    banner_idx: banner.banner_idx
                     }
                 })
             
