@@ -26,7 +26,7 @@ const BannerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  bannerIdx: {
+  banner_idx: {
     type: Number,
     required: true,
   },
@@ -48,7 +48,7 @@ import mongoose from "mongoose";
 export interface IBanner {
   _id?: string;
   img: string;
-  bannerIdx: number;
+  banner_idx: number;
 }
 ```
 
