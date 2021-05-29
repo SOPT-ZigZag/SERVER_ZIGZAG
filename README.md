@@ -10,8 +10,8 @@
 
 | 이름     |      역할      | 비고 |
 | -------- | :------------: | :--: |
-| `권세훈` | `EC2, S3 연결` |      |
-| `김서현` |                |      |
+| `권세훈` | `EC2, S3 연결`, `메인뷰 API 담당` |      |
+| `김서현` |  `스토어뷰 API 담당`  |      |
 
 ### Models
 
@@ -26,7 +26,7 @@ const BannerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  banner_idx: {
+  bannerIdx: {
     type: Number,
     required: true,
   },
@@ -48,7 +48,7 @@ import mongoose from "mongoose";
 export interface IBanner {
   _id?: string;
   img: string;
-  banner_idx: number;
+  bannerIdx: number;
 }
 ```
 
