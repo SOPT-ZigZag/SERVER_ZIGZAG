@@ -54,4 +54,4 @@ export interface IBanner {
 
 ### API 명세서
 
-- ##### [API 명세서]()
+- ##### [API 명세서](https://github.com/SOPT-ZigZag/SERVER_ZIGZAG/wiki)
