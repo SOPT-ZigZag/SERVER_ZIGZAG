@@ -15,7 +15,7 @@ const StoreSchema = new mongoose.Schema({
         required: true
     },
     coupon: {
-        type:String,
+        type:Number,
         required: false
     },
     bookmark: {

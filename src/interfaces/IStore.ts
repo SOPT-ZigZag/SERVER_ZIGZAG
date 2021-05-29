@@ -5,6 +5,6 @@ export interface IStore {
     img: string;
     brand: string;
     style: string;
-    coupon: string;
+    coupon: number;
     bookmark: boolean;
   }
