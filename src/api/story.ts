@@ -14,7 +14,7 @@ router.get("/", async(req: Request, res: Response) => {
                 "message" : "성공",
                 "data" : {
                     img: story.img,
-                    story_idx: story.story_idx,
+                    storyIdx: story.storyIdx,
                     brand: story.brand,
                     view: story.view,
                     }
