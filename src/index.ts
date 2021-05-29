@@ -11,6 +11,8 @@ app.use(express.json());
 // Define Routes
 
 app.use("/api/banner", require("./api/banner"))
+app.use("/api/story", require("./api/story"))
+app.use("/api/store", require("./api/store"))
 
 
 // error handler
