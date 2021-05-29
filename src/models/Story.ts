@@ -8,11 +8,11 @@ const StorySchema = new mongoose.Schema({
     },
     brand: {
         type:String,
-        required: true
+        required: false
     },
     view: {
         type:Number,
-        required: true
+        required: false
     },
   });
   
