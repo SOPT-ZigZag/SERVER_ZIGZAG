@@ -3,15 +3,16 @@
 ## BaseURL : 18.217.241.233:5000
 
 ### 서비스 소개
+
 `개발자` : 권세훈, 김서현<br>
 `서비스 이름` : 지그재그<br>
 
 ### 서버 파트원
 
-| 이름     |      역할      | 비고 |
-| -------- | :------------: | :--: |
+| 이름     |               역할                | 비고 |
+| -------- | :-------------------------------: | :--: |
 | `권세훈` | `EC2, S3 연결`, `메인뷰 API 담당` |      |
-| `김서현` |  `스토어뷰 API 담당`  |      |
+| `김서현` |        `스토어뷰 API 담당`        |      |
 
 ### Models
 
@@ -26,7 +27,7 @@ const BannerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  bannerIdx: {
+  banner_idx: {
     type: Number,
     required: true,
   },
@@ -48,7 +49,7 @@ import mongoose from "mongoose";
 export interface IBanner {
   _id?: string;
   img: string;
-  bannerIdx: number;
+  banner_idx: number;
 }
 ```
 
