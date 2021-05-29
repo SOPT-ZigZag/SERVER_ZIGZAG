@@ -53,6 +53,50 @@ export interface IBanner {
 }
 ```
 
+- /interfaces/IItem.ts
+
+```typescript
+import mongoose from "mongoose";
+
+export interface IStory {
+  _id?: string;
+  img: string;
+  story_idx: number;
+  brand: string;
+  view: number;
+}
+```
+
+- /interfaces/IStore.ts
+
+```typescript
+import mongoose from "mongoose";
+
+export interface IStore {
+  _id?: string;
+  img: string;
+  store_idx: number;
+  brand: string;
+  style: string;
+  coupon: number;
+  bookmark: boolean;
+}
+```
+
+- /interfaces/IStory.ts
+
+```typescript
+import mongoose from "mongoose";
+
+export interface IStory {
+  _id?: string;
+  img: string;
+  story_idx: number;
+  brand: string;
+  view: number;
+}
+```
+
 ### API 명세서
 
 - ##### [API 명세서](https://github.com/SOPT-ZigZag/SERVER_ZIGZAG/wiki)
