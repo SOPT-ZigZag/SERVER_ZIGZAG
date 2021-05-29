@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export interface IStory {
+export interface IStore {
     _id?: string;
     img: string;
     brand: string;
