@@ -6,15 +6,15 @@ import Story from "../models/Story";
 
 router.get("/", async(req: Request, res: Response) => {
         try{
-            const randomInt = Math.floor(Math.random()*2);
-            const story = await Story.findOne({storyIdx : randomInt});
+            const randomInt = Math.floor(Math.random()*3);
+            const story = await Story.findOne({story_idx : randomInt});
             res.json({
                 "status" : 200,
                 "success" : true,
                 "message" : "성공",
                 "data" : {
                     img: story.img,
-                    storyIdx: story.storyIdx,
+                    story_idx: story.story_idx,
                     brand: story.brand,
                     view: story.view,
                     }

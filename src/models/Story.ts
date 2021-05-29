@@ -6,7 +6,7 @@ const StorySchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    storyIdx: {
+    story_idx: {
         type:Number,
         required: true
     },
