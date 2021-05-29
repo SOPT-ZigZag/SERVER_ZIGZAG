@@ -6,6 +6,10 @@ const StoreSchema = new mongoose.Schema({
         type:String,
         required: true
     },
+    store_idx: {
+        type:Number,
+        required: true
+    },
     brand: {
         type:String,
         required: true

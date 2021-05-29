@@ -6,14 +6,15 @@ import Store from "../models/Store";
 
 router.get("/", async(req: Request, res: Response) => {
         try{
-            const randomInt = Math.floor(Math.random()*2);
-            const store = await Store.findOne({storeIdx : randomInt});
+            const randomInt = Math.floor(Math.random()*3);
+            const store = await Store.findOne({store_idx : randomInt});
             res.json({
                 "status" : 200,
                 "success" : true,
                 "message" : "성공",
                 "data" : {
                     img: store.img,
+                    store_idx: store.store_idx,
                     brand: store.brand,
                     style: store.style,
                     coupon: store.coupon,
