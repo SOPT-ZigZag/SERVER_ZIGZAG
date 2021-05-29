@@ -6,6 +6,10 @@ const StorySchema = new mongoose.Schema({
         type:String,
         required: true
     },
+    story_idx: {
+        type:Number,
+        required: true
+    },
     brand: {
         type:String,
         required: false
