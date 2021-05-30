@@ -210,6 +210,3 @@ export interface IStory {
   view: number;
 }
 ```
-
-### API 명세서
-
