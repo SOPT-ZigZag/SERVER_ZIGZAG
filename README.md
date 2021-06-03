@@ -14,6 +14,12 @@
 | `권세훈` | `EC2, S3 연결`, `메인뷰 API 담당` |      |
 | `김서현` |        `스토어뷰 API 담당`        |      |
 
+
+## API
+- #### [API 명세서](https://github.com/SOPT-ZigZag/SERVER_ZIGZAG/wiki)
+<br>
+
+## Models & Interfaces
 ### Models
 
 - /models/Banner.ts
@@ -204,7 +210,3 @@ export interface IStory {
   view: number;
 }
 ```
-
-### API 명세서
-
-- ##### [API 명세서](https://github.com/SOPT-ZigZag/SERVER_ZIGZAG/wiki)
