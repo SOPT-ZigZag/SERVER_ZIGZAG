@@ -14,12 +14,13 @@
 | `권세훈` | `EC2, S3 연결`, `메인뷰 API 담당` |      |
 | `김서현` |        `스토어뷰 API 담당`        |      |
 
-
 ## API
+
 - #### [API 명세서](https://github.com/SOPT-ZigZag/SERVER_ZIGZAG/wiki)
 <br>
 
 ## Models & Interfaces
+
 ### Models
 
 - /models/Banner.ts
@@ -120,6 +121,14 @@ const StoreSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  z_only: {
+    type: Boolean,
+    required: true,
+  },
+  follower: {
+    type: Number,
+    required: true,
+  },
 });
 
 export default mongoose.model<IStore & mongoose.Document>("Store", StoreSchema);
@@ -194,6 +203,8 @@ export interface IStore {
   style: string;
   coupon: number;
   bookmark: boolean;
+  z_only: boolean;
+  follower: number;
 }
 ```
 
