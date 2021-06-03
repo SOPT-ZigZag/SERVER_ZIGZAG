@@ -19,6 +19,8 @@ router.get("/", async(req: Request, res: Response) => {
                     style: store.style,
                     coupon: store.coupon,
                     bookmark: store.bookmark,
+                    z_only: store.z_only,
+                    follower: store.follower,
                     }
                 })
             

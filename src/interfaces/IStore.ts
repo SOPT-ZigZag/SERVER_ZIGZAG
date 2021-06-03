@@ -8,4 +8,6 @@ export interface IStore {
     style: string;
     coupon: number;
     bookmark: boolean;
+    z_only: boolean;
+    follower: number;
   }

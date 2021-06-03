@@ -26,6 +26,14 @@ const StoreSchema = new mongoose.Schema({
         type:String,
         required: true
     },
+    z_only: {
+        type:Boolean,
+        required: true
+    },
+    follower: {
+        type:Number,
+        required: true
+    },
   });
   
   export default mongoose.model<IStore & mongoose.Document>(
