@@ -12,6 +12,9 @@ app.use(express_1.default.urlencoded());
 app.use(express_1.default.json());
 // Define Routes
 app.use("/api/main", require("./api/main"));
+app.use("/api/banner", require("./api/banner"));
+app.use("/api/story", require("./api/story"));
+app.use("/api/store", require("./api/store"));
 // error handler
 app.use(function (err, req, res, next) {
     // set locals, only providing error in development
