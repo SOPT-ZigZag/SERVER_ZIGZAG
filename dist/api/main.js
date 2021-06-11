@@ -28,15 +28,17 @@ const Item_1 = __importDefault(require("../models/Item"));
  */
 router.get("/banner", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const randomInt = Math.floor(Math.random() * 2);
-        const banner = yield Banner_1.default.findOne({ banner_idx: randomInt });
+        //const randomInt = Math.floor(Math.random()*3);
+        const banner = yield Banner_1.default.find();
         res.json({
             "status": 200,
             "success": true,
             "message": "배너 API 불러오기 성공",
             "data": {
-                img: banner.img,
-                banner_idx: banner.banner_idx
+                "banner": banner
+                // img: banner.img,
+                // banner_idx: banner.banner_idx
+                // }
             }
         });
     }
