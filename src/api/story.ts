@@ -6,7 +6,7 @@ import Story from "../models/Story";
 
 router.get("/", async(req: Request, res: Response) => {
         try{
-            var story =  await Story.find({story_idx : 1})
+            const story = await Story.find();
   
             story = story.sort(function() {
                     return Math.random() - Math.random();

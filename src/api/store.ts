@@ -6,7 +6,7 @@ import Store from "../models/Store";
 
 router.get("/", async(req: Request, res: Response) => {
         try{
-            var store =  await Store.find({store_idx : 1})
+            var store =  await Store.find({})
   
             store = store.sort(function() {
                     return Math.random() - Math.random();
