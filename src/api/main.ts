@@ -16,15 +16,17 @@ import Item from "../models/Item";
  */
 router.get("/banner", async(req: Request, res: Response) => {
         try{
-            const randomInt = Math.floor(Math.random()*2);
-            const banner = await Banner.findOne({banner_idx : randomInt});
+            //const randomInt = Math.floor(Math.random()*3);
+            const banner = await Banner.find();
             res.json({
                 "status" : 200,
                 "success" : true,
                 "message" : "배너 API 불러오기 성공",
                 "data" : {
-                    img: banner.img,
-                    banner_idx: banner.banner_idx
+                    "banner" : banner
+                    // img: banner.img,
+                    // banner_idx: banner.banner_idx
+                    // }
                     }
                 })
             
