@@ -17,7 +17,7 @@ const router = express_1.default.Router();
 const Story_1 = __importDefault(require("../models/Story"));
 router.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const story = yield Story_1.default.find();
+        var story = yield Story_1.default.find({});
         story = story.sort(function () {
             return Math.random() - Math.random();
         });
